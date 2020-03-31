@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,16 +45,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BranchingOverBoolean\AccountStep2.cs" />
-    <Compile Include="BranchingOverBoolean\AccountStep1.cs" />
-    <Compile Include="BranchingOverBoolean\Account.cs" />
-    <Compile Include="BranchingOverBoolean\Frozen.cs" />
-    <Compile Include="BranchingOverBoolean\IFreezable.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="3-BranchingOverBoolean\AccountStep3.cs" />
+    <Compile Include="3-BranchingOverBoolean\AccountStep2.cs" />
+    <Compile Include="3-BranchingOverBoolean\AccountStep1.cs" />
+    <Compile Include="3-BranchingOverBoolean\Account.cs" />
+    <Compile Include="3-BranchingOverBoolean\Active2.cs" />
+    <Compile Include="3-BranchingOverBoolean\Active.cs" />
+    <Compile Include="3-BranchingOverBoolean\Closed.cs" />
+    <Compile Include="3-BranchingOverBoolean\Frozen2.cs" />
+    <Compile Include="3-BranchingOverBoolean\Frozen.cs" />
+    <Compile Include="3-BranchingOverBoolean\IAccountState.cs" />
+    <Compile Include="3-BranchingOverBoolean\IFreezable.cs" />
+    <Compile Include="3-BranchingOverBoolean\NotVerified.cs" />
+    <Compile Include="5-Collections\CompositePainterFactories.cs" />
+    <Compile Include="5-Collections\Painters.cs" />
+    <Compile Include="5-Collections\CompositePainterFinalStep.cs" />
+    <Compile Include="5-Collections\PaintingGroup.cs" />
+    <Compile Include="5-Collections\Program3.cs" />
+    <Compile Include="5-Collections\Program2.cs" />
+    <Compile Include="5-Collections\Program.cs" />
+    <Compile Include="5-Collections\ProportionalPainter.cs" />
+    <Compile Include="4-Loops\EnumerableExtensions.cs" />
+    <Compile Include="4-Loops\IPainter.cs" />
+    <Compile Include="4-Loops\ProgramStep4.cs" />
+    <Compile Include="4-Loops\ProgramStep3.cs" />
+    <Compile Include="4-Loops\ProgramStep2.cs" />
+    <Compile Include="4-Loops\Program.cs" />
+    <Compile Include="6-Algorithms\CombiningPainter4.cs" />
+    <Compile Include="6-Algorithms\CombiningPainter3.cs" />
+    <Compile Include="6-Algorithms\CombiningPainter2.cs" />
+    <Compile Include="6-Algorithms\CombiningPainter1.cs" />
+    <Compile Include="6-Algorithms\CompositePainter.cs" />
+    <Compile Include="6-Algorithms\CompositePainterFactories.cs" />
+    <Compile Include="6-Algorithms\IPaintingScheduler.cs" />
+    <Compile Include="6-Algorithms\PainterTask.cs" />
+    <Compile Include="7-ImutableObjects\MoneyAmount2.cs" />
+    <Compile Include="7-ImutableObjects\MoneyAmount.cs" />
+    <Compile Include="7-ImutableObjects\Program.cs" />
+    <Compile Include="8-Null\IWarranty.cs" />
+    <Compile Include="8-Null\LifetimeWarranty.cs" />
+    <Compile Include="8-Null\Program2.cs" />
+    <Compile Include="8-Null\Program.cs" />
+    <Compile Include="8-Null\SoldArticle1.cs" />
+    <Compile Include="8-Null\SoldArticle.cs" />
+    <Compile Include="8-Null\VoidWarranty.cs" />
+    <Compile Include="8-Null\Warranty.cs" />
+    <Compile Include="9-OptionalObjects\Part.cs" />
+    <Compile Include="9-OptionalObjects\SoldArticle.cs" />
+    <Compile Include="Common\Option.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
