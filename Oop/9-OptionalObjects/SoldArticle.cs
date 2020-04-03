@@ -69,7 +69,12 @@ namespace Oop._9_OptionalObjects
 
         public void CircuitryNotOperational(DateTime detectedOn)
         {
-            Circuitry.ToList().ForEach(circuitry =>
+            //Circuitry.ToList().ForEach(circuitry =>
+            //{
+            //    circuitry.MarkAsDefective(detectedOn);
+            //    CircuitryWarranty = FailedCircuitryWarranty;
+            //});
+            Circuitry.Do(circuitry =>
             {
                 circuitry.MarkAsDefective(detectedOn);
                 CircuitryWarranty = FailedCircuitryWarranty;
@@ -109,7 +114,8 @@ namespace Oop._9_OptionalObjects
 
         public void ClaimCircuitryWarranty(Action onValidClaim)
         {
-            Circuitry.ToList().ForEach(circuitry => CircuitryWarranty.Claim(circuitry.DefectDetectedOn, onValidClaim));
+            //Circuitry.ToList().ForEach(circuitry => CircuitryWarranty.Claim(circuitry.DefectDetectedOn, onValidClaim));
+            Circuitry.Do(circuitry => CircuitryWarranty.Claim(circuitry.DefectDetectedOn, onValidClaim));
         }
     }
 }

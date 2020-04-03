@@ -45,6 +45,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10-AvoidSwiches\DeviceStatus.cs" />
+    <Compile Include="10-AvoidSwiches\SoldArticle.cs" />
+    <Compile Include="11-ChainOfRules\IWarrantyRules.cs" />
+    <Compile Include="11-ChainOfRules\IWarrantyRulesFactory.cs" />
+    <Compile Include="11-ChainOfRules\Program.cs" />
+    <Compile Include="11-ChainOfRules\Rules\ChainedRule.cs" />
+    <Compile Include="11-ChainOfRules\Rules\ChristmassRules.cs" />
+    <Compile Include="11-ChainOfRules\Rules\ConditionalRule.cs" />
+    <Compile Include="11-ChainOfRules\Rules\DefaultRules.cs" />
+    <Compile Include="11-ChainOfRules\Rules\MoneyBackRule.cs" />
+    <Compile Include="11-ChainOfRules\Rules\CircuitryRule.cs" />
+    <Compile Include="11-ChainOfRules\Rules\NotOperationalRule.cs" />
+    <Compile Include="11-ChainOfRules\Rules\NotSatisfiedRule.cs" />
+    <Compile Include="11-ChainOfRules\SoldArticle.cs" />
+    <Compile Include="12-RefactoringBindAll\Program.cs" />
     <Compile Include="3-BranchingOverBoolean\AccountStep3.cs" />
     <Compile Include="3-BranchingOverBoolean\AccountStep2.cs" />
     <Compile Include="3-BranchingOverBoolean\AccountStep1.cs" />
@@ -90,8 +105,11 @@
     <Compile Include="8-Null\SoldArticle.cs" />
     <Compile Include="8-Null\VoidWarranty.cs" />
     <Compile Include="8-Null\Warranty.cs" />
+    <Compile Include="10-AvoidSwiches\IWarranryMapFactory.cs" />
     <Compile Include="9-OptionalObjects\Part.cs" />
     <Compile Include="9-OptionalObjects\SoldArticle.cs" />
+    <Compile Include="10-AvoidSwiches\WarrantyRules.cs" />
+    <Compile Include="Common\EnumerableExtentions.cs" />
     <Compile Include="Common\Option.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

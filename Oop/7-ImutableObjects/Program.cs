@@ -106,7 +106,7 @@ namespace Oop._7_ImutableObjects
         //    Console.ReadKey();
         //}
 
-        static void Main(string[] args)
+        static void MainX(string[] args)
         {
             Buy(new MoneyAmount(12,"USD"),
                 new MoneyAmount(10,"USD"));
